@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/components/common/vstack.dart';
-import 'package:flutter_boilerplate/theme/font.dart';
+import 'package:interest_calculator/components/common/vstack.dart';
+import 'package:interest_calculator/theme/font.dart';
 
 class AuthInfo extends StatelessWidget {
   const AuthInfo({Key? key, this.label = '', this.subLabel = ''})

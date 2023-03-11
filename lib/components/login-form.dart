@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/components/common/form/custom-form-field.dart';
-import 'package:flutter_boilerplate/components/common/form/index.dart';
-import 'package:flutter_boilerplate/theme/font.dart';
+import 'package:interest_calculator/components/common/form/custom-form-field.dart';
+import 'package:interest_calculator/components/common/form/index.dart';
+import 'package:interest_calculator/theme/font.dart';
 import 'package:get/get.dart';
 import 'common/form/validators.dart';
 

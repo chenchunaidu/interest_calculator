@@ -1,8 +1,8 @@
 import 'package:date_time_picker/date_time_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/components/common/form/checkbox-form-field-model.dart';
-import 'package:flutter_boilerplate/components/common/form/checkbox-form-field.dart';
-import 'package:flutter_boilerplate/components/common/hstack.dart';
+import 'package:interest_calculator/components/common/form/checkbox-form-field-model.dart';
+import 'package:interest_calculator/components/common/form/checkbox-form-field.dart';
+import 'package:interest_calculator/components/common/hstack.dart';
 import './custom-text-form-field-model.dart';
 import './custom-date-form-field-model.dart';
 

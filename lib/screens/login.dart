@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/components/auth-info.dart';
-import 'package:flutter_boilerplate/components/login-form.dart';
-import 'package:flutter_boilerplate/components/common/vstack.dart';
-import 'package:flutter_boilerplate/theme/inset.dart';
+import 'package:interest_calculator/components/auth-info.dart';
+import 'package:interest_calculator/components/login-form.dart';
+import 'package:interest_calculator/components/common/vstack.dart';
+import 'package:interest_calculator/theme/inset.dart';
 import 'package:get/get.dart';
 
 class Login extends StatelessWidget {

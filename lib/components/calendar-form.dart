@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/theme/inset.dart';
+import 'package:interest_calculator/theme/inset.dart';
 
 import '../theme/font.dart';
 import 'common/form/custom-form-field.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/theme/color.dart';
-import 'package:flutter_boilerplate/theme/input.dart';
+import 'package:interest_calculator/theme/color.dart';
+import 'package:interest_calculator/theme/input.dart';
 
 ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,

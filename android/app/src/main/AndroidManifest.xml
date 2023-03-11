@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutter_boilerplate">
+    package="com.example.interest_calculator">
    <application
-        android:label="flutter_boilerplate"
+        android:label="interest_calculator"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

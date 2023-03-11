@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/components/common/hstack.dart';
-import 'package:flutter_boilerplate/theme/inset.dart';
+import 'package:interest_calculator/components/common/hstack.dart';
+import 'package:interest_calculator/theme/inset.dart';
 
 import '../vstack.dart';
 

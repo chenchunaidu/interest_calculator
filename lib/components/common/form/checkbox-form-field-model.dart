@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/components/common/form/validators.dart';
+import 'package:interest_calculator/components/common/form/validators.dart';
 
 class CheckboxFormFieldModel {
   final String? title;
