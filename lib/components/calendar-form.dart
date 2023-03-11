@@ -38,8 +38,8 @@ var calendarForm = [
   },
 ];
 
-class CalendarForm extends StatelessWidget {
-  const CalendarForm({Key? key}) : super(key: key);
+class InterestForm extends StatelessWidget {
+  const InterestForm({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -17,17 +17,6 @@ class ScaffoldWithNavBarTabItem extends BottomNavigationBarItem {
 const tabs = [
   ScaffoldWithNavBarTabItem(
       initialLocation: "/home", icon: Icon(Icons.home_filled), label: 'Home'),
-  ScaffoldWithNavBarTabItem(
-      initialLocation: "/content", icon: Icon(Icons.book), label: 'Content'),
-  ScaffoldWithNavBarTabItem(
-    initialLocation: "/calendar",
-    icon: Icon(Icons.calendar_month_outlined),
-    label: 'Calendar',
-  ),
-  ScaffoldWithNavBarTabItem(
-      initialLocation: "/profile",
-      icon: Icon(Icons.account_circle_outlined),
-      label: 'Profile'),
 ];
 
 class ScaffoldWithBottomNavBar extends StatefulWidget {
