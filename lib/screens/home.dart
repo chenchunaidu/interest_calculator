@@ -9,9 +9,9 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SingleChildScrollView(
-        child: VStack(children: [
-      TranslateButtons(),
+        child: VStack(spacing: 0.0, children: [
       InterestForm(),
+      TranslateButtons(),
     ]));
   }
 }

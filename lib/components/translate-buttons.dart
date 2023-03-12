@@ -3,7 +3,7 @@ import 'package:interest_calculator/components/common/hstack.dart';
 import 'package:interest_calculator/components/translate-button.dart';
 import 'package:interest_calculator/theme/inset.dart';
 
-const translateButtonsData = [
+var translateButtonsData = [
   TranslateButton(locale: Locale('en', 'IN'), label: "English"),
   TranslateButton(locale: Locale('te', 'IN'), label: "తెలుగు"),
   TranslateButton(locale: Locale('hi', 'IN'), label: "हिंदी ")
