@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:interest_calculator/components/common/vstack.dart';
 import 'package:interest_calculator/components/interest-model.dart';
 import 'package:interest_calculator/components/interest-preview.dart';
@@ -13,12 +14,12 @@ var calendarForm = [
   {
     "type": FormFieldType.date,
     "name": "startDate",
-    "placeholder": "Start Date",
+    "placeholder": "startDatePlaceholder".tr,
   },
   {
     "type": FormFieldType.date,
     "name": "endDate",
-    "placeholder": "End Date",
+    "placeholder": "endDatePlaceholder".tr,
   },
   {
     "type": FormFieldType.row,
@@ -26,14 +27,14 @@ var calendarForm = [
       {
         "type": FormFieldType.text,
         "name": "principleAmount",
-        "placeholder": "Principle",
-        "helperText": "Initial Amount"
+        "placeholder": "Principle Amount".tr,
+        "helperText": "principleHelperText".tr
       },
       {
         "type": FormFieldType.text,
         "name": "interestRate",
-        "placeholder": "Annual Interest rate",
-        "helperText": "Monthly interest rate x 12"
+        "placeholder": "Annual Interest Rate".tr,
+        "helperText": "annualInterestRateHelperText".tr
       },
     ]
   },
@@ -58,15 +59,15 @@ class _InterestFormState extends State<InterestForm> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 spacing: Insets.xl,
                 children: [
-                  const Text(
-                    "🤑 Interest Calculator",
+                  Text(
+                    'homeScreenHeading'.tr,
                     style: TextStyles.h3,
                   ),
                   CustomForm(
                     fields: calendarForm,
                     spacing: Insets.lg,
-                    submitButtonChild: const Text(
-                      "Calculate",
+                    submitButtonChild: Text(
+                      "interestCalculateButtonLabel".tr,
                       style: TextStyles.buttonText1,
                     ),
                     onSubmit: (value) {
@@ -78,12 +79,12 @@ class _InterestFormState extends State<InterestForm> {
                   interestData != null
                       ? VStack(children: [
                           InterestPreview(
-                            label: "Simple",
+                            label: "Simple".tr,
                             interestPreviewData:
                                 interestData!.getSimpleInterestPreview(),
                           ),
                           InterestPreview(
-                            label: "Compound",
+                            label: "Compound".tr,
                             interestPreviewData:
                                 interestData!.getCompoundInterestPreview(),
                           )

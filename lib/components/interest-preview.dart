@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:interest_calculator/components/common/vstack.dart';
 import 'package:interest_calculator/components/interest-preview-line-item.dart';
 import 'package:interest_calculator/components/interest-preview-model.dart';
@@ -30,15 +31,16 @@ class InterestPreview extends StatelessWidget {
               fontWeight: FontWeight.w600, fontSize: 16, color: brand),
         ),
         InterestPreviewLineItem(
-            label: "Principal amount",
+            label: "Principle Amount".tr,
             value: interestPreviewData.principleAmount),
         InterestPreviewLineItem(
-            label: "Interest", value: interestPreviewData.interestRate),
+            label: "Annual Interest Rate".tr,
+            value: "${interestPreviewData.interestRate}%"),
         InterestPreviewLineItem(
-            label: "Time period", value: interestPreviewData.timePeriod),
+            label: "Time Period".tr, value: interestPreviewData.timePeriod),
         const Divider(),
         InterestPreviewLineItem(
-            label: "Total amount", value: interestPreviewData.totalAmount),
+            label: "Total Amount".tr, value: interestPreviewData.totalAmount),
       ]),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:interest_calculator/helpers/translations.dart';
 import 'package:interest_calculator/layout/get-page-wrapper.dart';
 import 'package:interest_calculator/screens/home.dart';
 import 'package:interest_calculator/theme/index.dart';
@@ -15,6 +16,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      locale: Locale('en', 'IN'),
+      translations: Messages(),
       initialRoute: '/home',
       getPages: getPageWrapper([
         PageWrapper(path: '/home', child: const Home(), navbar: false),
