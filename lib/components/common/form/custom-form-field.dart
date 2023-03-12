@@ -49,6 +49,9 @@ class CustomFormField extends StatelessWidget {
         onSaved: (value) {
           onSaved!(value, formFieldData.name);
         },
+        onTapOutside: (event) {
+          FocusScope.of(context).unfocus();
+        },
         keyboardType: formFieldData.keyboardType,
         validator: formFieldData.validator,
         obscureText: formFieldData.obscureText ?? false,
