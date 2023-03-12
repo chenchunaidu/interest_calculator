@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'common/hstack.dart';
 
 class InterestPreviewLineItem extends StatelessWidget {
