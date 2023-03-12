@@ -57,7 +57,7 @@ class _InterestFormState extends State<InterestForm> {
                 spacing: Insets.xl,
                 children: [
                   const Text(
-                    "Interest Calculator",
+                    "🤑 Interest Calculator",
                     style: TextStyles.h3,
                   ),
                   CustomForm(
