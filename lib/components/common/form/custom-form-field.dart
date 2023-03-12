@@ -75,6 +75,7 @@ class CustomFormField extends StatelessWidget {
     } else if (props["type"] == FormFieldType.row) {
       return HStack(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: generateFormFieldWidgets(
               fields: props["fields"],
               onSaved: onSaved,
