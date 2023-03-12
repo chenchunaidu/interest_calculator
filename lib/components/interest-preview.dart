@@ -4,7 +4,6 @@ import 'package:interest_calculator/components/common/vstack.dart';
 import 'package:interest_calculator/components/interest-preview-line-item.dart';
 import 'package:interest_calculator/components/interest-preview-model.dart';
 import 'package:interest_calculator/theme/color.dart';
-import 'package:interest_calculator/theme/font.dart';
 import 'package:interest_calculator/theme/inset.dart';
 
 class InterestPreview extends StatelessWidget {

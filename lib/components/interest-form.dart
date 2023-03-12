@@ -52,44 +52,43 @@ class _InterestFormState extends State<InterestForm> {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-        child: Padding(
-            padding: EdgeInsets.all(Insets.lg),
-            child: VStack(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                spacing: Insets.xl,
-                children: [
-                  Text(
-                    'homeScreenHeading'.tr,
-                    style: TextStyles.h3,
-                  ),
-                  CustomForm(
-                    fields: calendarForm,
-                    spacing: Insets.lg,
-                    submitButtonChild: Text(
-                      "interestCalculateButtonLabel".tr,
-                      style: TextStyles.buttonText1,
-                    ),
-                    onSubmit: (value) {
-                      setState(() {
-                        interestData = InterestModel.fromJson(value);
-                      });
-                    },
-                  ),
-                  interestData != null
-                      ? VStack(children: [
-                          InterestPreview(
-                            label: "Simple".tr,
-                            interestPreviewData:
-                                interestData!.getSimpleInterestPreview(),
-                          ),
-                          InterestPreview(
-                            label: "Compound".tr,
-                            interestPreviewData:
-                                interestData!.getCompoundInterestPreview(),
-                          )
-                        ])
-                      : Container()
-                ])));
+    return Padding(
+        padding: EdgeInsets.all(Insets.lg),
+        child: VStack(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            spacing: Insets.xl,
+            children: [
+              Text(
+                'homeScreenHeading'.tr,
+                style: TextStyles.h3,
+              ),
+              CustomForm(
+                fields: calendarForm,
+                spacing: Insets.lg,
+                submitButtonChild: Text(
+                  "interestCalculateButtonLabel".tr,
+                  style: TextStyles.buttonText1,
+                ),
+                onSubmit: (value) {
+                  setState(() {
+                    interestData = InterestModel.fromJson(value);
+                  });
+                },
+              ),
+              interestData != null
+                  ? VStack(children: [
+                      InterestPreview(
+                        label: "Simple".tr,
+                        interestPreviewData:
+                            interestData!.getSimpleInterestPreview(),
+                      ),
+                      InterestPreview(
+                        label: "Compound".tr,
+                        interestPreviewData:
+                            interestData!.getCompoundInterestPreview(),
+                      )
+                    ])
+                  : Container()
+            ]));
   }
 }
