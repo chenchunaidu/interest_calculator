@@ -68,7 +68,6 @@ class _InterestFormState extends State<InterestForm> {
                       style: TextStyles.buttonText1,
                     ),
                     onSubmit: (value) {
-                      print(value);
                       setState(() {
                         interestData = InterestModel.fromJson(value);
                       });
