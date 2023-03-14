@@ -28,13 +28,15 @@ var calendarForm = [
         "type": FormFieldType.text,
         "name": "principleAmount",
         "placeholder": "Principle Amount".tr,
-        "helperText": "principleHelperText".tr
+        "helperText": "principleHelperText".tr,
+        "keyboardType": TextInputType.number
       },
       {
         "type": FormFieldType.text,
         "name": "interestRate",
         "placeholder": "Annual Interest Rate".tr,
-        "helperText": "annualInterestRateHelperText".tr
+        "helperText": "annualInterestRateHelperText".tr,
+        "keyboardType": TextInputType.number
       },
     ]
   },
