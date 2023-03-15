@@ -22,3 +22,10 @@ jobs:
           channel: "stable"
       - run: flutter pub get
       - run: flutter build apk
+
+      - name: Upload android apk file
+        uses: actions/upload-artifact@v3
+        with:
+          name: app.apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+          retention-days: 5
