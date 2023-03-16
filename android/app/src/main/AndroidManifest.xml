@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.interest_calculator">
    <application
-        android:label="interest_calculator"
+        android:label="Interest Calculator"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity
