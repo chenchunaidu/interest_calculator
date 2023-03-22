@@ -1,5 +1,6 @@
 import 'dart:ffi';
 
+import 'package:get/get.dart';
 import 'package:interest_calculator/components/interest-preview-model.dart';
 import 'dart:math';
 
@@ -52,27 +53,29 @@ class InterestModel {
     var diffYear = endDate.year - startDate.year;
     var diffString = "";
     if (diffYear + yearAddValue > 0) {
-      diffString += "${diffYear + yearAddValue} Year";
+      diffString += "${diffYear + yearAddValue}";
       if (diffYear + yearAddValue > 1) {
-        diffString += "s ";
+        diffString += "years".tr;
       } else {
-        diffString += " ";
+        diffString += "year".tr;
       }
+      diffString += " ";
     }
     if (monthAddValue + diffMonth > 0) {
-      diffString += "${diffMonth + monthAddValue} Month";
+      diffString += "${diffMonth + monthAddValue} ";
       if (monthAddValue + diffMonth > 1) {
-        diffString += "s ";
+        diffString += "months".tr;
       } else {
-        diffString += " ";
+        diffString += "month".tr;
       }
+      diffString += " ";
     }
     if (diffDate > 0) {
-      diffString += "$diffDate day";
+      diffString += "$diffDate ";
       if (diffDate > 1) {
-        diffString += "s ";
+        diffString += "days".tr;
       } else {
-        diffString += " ";
+        diffString += "day".tr;
       }
     }
     return diffString;

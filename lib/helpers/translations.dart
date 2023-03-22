@@ -15,6 +15,12 @@ class Messages extends Translations {
           "Simple": "Simple",
           "Total Amount": "Total Amount",
           "Time Period": "Time Period",
+          "years": "years",
+          "year": "year",
+          "months": "months",
+          "month": "month",
+          "days": "days",
+          "day": "day"
         },
         'te_IN': {
           'homeScreenHeading': '🤑 వడ్డీ కాలిక్యులేటర్',
@@ -29,6 +35,12 @@ class Messages extends Translations {
           "Compound": "చక్రవడ్డీ",
           "Total Amount": "మొత్తం",
           "Time Period": "సమయ వ్యవధి",
+          "years": "సంవత్సరాలు",
+          "year": "సంవత్సరం",
+          "months": "నెలల",
+          "month": "నెల",
+          "days": "రోజులు",
+          "day": "రోజు"
         },
         'hi_IN': {
           'homeScreenHeading': '🤑 ऋण कैलक्यूलेटर',
@@ -43,6 +55,12 @@ class Messages extends Translations {
           "Compound": "चक्रवृद्धि ब्याज",
           "Total Amount": "कुल",
           "Time Period": "समय सीमा",
+          "years": "साल",
+          "year": "वर्ष",
+          "months": "महीने",
+          "month": "महीना",
+          "days": "दिन",
+          "day": "दिन"
         }
       };
 }
