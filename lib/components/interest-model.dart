@@ -78,6 +78,9 @@ class InterestModel {
         diffString += "day".tr;
       }
     }
+    if (diffString == "") {
+      return "0 ${"days".tr}";
+    }
     return diffString;
   }
 
