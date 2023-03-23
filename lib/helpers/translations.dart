@@ -21,7 +21,7 @@ class Messages extends Translations {
           "month": "month",
           "days": "days",
           "day": "day",
-          "Expenses \n&Savings": "Expenses \n&Savings",
+          "Expenses \n&Savings": "Expenses \n& Savings",
           "Interest\nCalculator": "Interest\nCalculator",
           "Tax\nCalculator": "Tax\nCalculator"
         },
@@ -44,7 +44,7 @@ class Messages extends Translations {
           "month": "నెల",
           "days": "రోజులు",
           "day": "రోజు",
-          "Expenses \n&Savings": "ఖర్చులు \n&పొదుపు",
+          "Expenses \n&Savings": "ఖర్చులు \n& పొదుపు",
           "Interest\nCalculator": "వడ్డీ \nకాలిక్యులేటర్",
           "Tax\nCalculator": "పన్ను \nకాలిక్యులేటర్"
         },
