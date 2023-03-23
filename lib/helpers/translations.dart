@@ -20,7 +20,10 @@ class Messages extends Translations {
           "months": "months",
           "month": "month",
           "days": "days",
-          "day": "day"
+          "day": "day",
+          "Expenses \n&Savings": "Expenses \n&Savings",
+          "Interest\nCalculator": "Interest\nCalculator",
+          "Tax\nCalculator": "Tax\nCalculator"
         },
         'te_IN': {
           'homeScreenHeading': '🤑 వడ్డీ కాలిక్యులేటర్',
@@ -40,7 +43,10 @@ class Messages extends Translations {
           "months": "నెలల",
           "month": "నెల",
           "days": "రోజులు",
-          "day": "రోజు"
+          "day": "రోజు",
+          "Expenses \n&Savings": "ఖర్చులు \n&పొదుపు",
+          "Interest\nCalculator": "వడ్డీ \nకాలిక్యులేటర్",
+          "Tax\nCalculator": "పన్ను \nకాలిక్యులేటర్"
         },
         'hi_IN': {
           'homeScreenHeading': '🤑 ऋण कैलक्यूलेटर',
@@ -60,7 +66,10 @@ class Messages extends Translations {
           "months": "महीने",
           "month": "महीना",
           "days": "दिन",
-          "day": "दिन"
+          "day": "दिन",
+          "Expenses \n&Savings": "खर्च \n&बचत",
+          "Interest\nCalculator": "ऋण \nकैलक्यूलेटर",
+          "Tax\nCalculator": "कर\nगणना"
         }
       };
 }

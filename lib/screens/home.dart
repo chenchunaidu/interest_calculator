@@ -13,23 +13,28 @@ class HomeTileModel {
 }
 
 var tabs = [
-  HomeTileModel(label: "Interest\nCalculator", path: "/interest-calculator")
+  HomeTileModel(label: "Expenses \n&Savings".tr, path: "/expenses-and-savings"),
+  HomeTileModel(label: "Interest\nCalculator".tr, path: "/interest-calculator"),
+  HomeTileModel(label: "Tax\nCalculator".tr, path: "/tax-calculator")
 ];
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-        child: VStack(
-            spacing: 0.0,
-            children: tabs
-                .map((e) => GestureDetector(
-                      child: Text(e.label),
-                      onTap: () {
-                        Get.toNamed(e.path);
-                      },
-                    ))
-                .toList()));
+    return GridView.builder(
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 3,
+      ),
+      itemCount: tabs.length,
+      itemBuilder: (BuildContext context, int index) {
+        return GestureDetector(
+          child: Text(tabs[index].label),
+          onTap: () {
+            Get.toNamed(tabs[index].path);
+          },
+        );
+      },
+    );
   }
 }

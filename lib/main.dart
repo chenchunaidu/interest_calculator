@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:interest_calculator/helpers/translations.dart';
 import 'package:interest_calculator/layout/get-page-wrapper.dart';
+import 'package:interest_calculator/screens/expenses-and-savings.dart';
 import 'package:interest_calculator/screens/home.dart';
 import 'package:interest_calculator/screens/interest-calculator.dart';
+import 'package:interest_calculator/screens/tax-calculator.dart';
 import 'package:interest_calculator/theme/index.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -29,6 +31,14 @@ class MyApp extends StatelessWidget {
         PageWrapper(
             path: '/interest-calculator',
             child: const InterestCalculator(),
+            navbar: false),
+        PageWrapper(
+            path: '/expenses-and-savings',
+            child: const ExpensesAndSavings(),
+            navbar: false),
+        PageWrapper(
+            path: '/tax-calculator',
+            child: const TaxCalculator(),
             navbar: false),
       ]),
       themeMode: ThemeMode.dark,
