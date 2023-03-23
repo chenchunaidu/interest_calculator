@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:interest_calculator/helpers/translations.dart';
 import 'package:interest_calculator/layout/get-page-wrapper.dart';
 import 'package:interest_calculator/screens/home.dart';
+import 'package:interest_calculator/screens/interest-calculator.dart';
 import 'package:interest_calculator/theme/index.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -25,6 +26,10 @@ class MyApp extends StatelessWidget {
       initialRoute: '/home',
       getPages: getPageWrapper([
         PageWrapper(path: '/home', child: const Home(), navbar: false),
+        PageWrapper(
+            path: '/interest-calculator',
+            child: const InterestCalculator(),
+            navbar: false),
       ]),
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
